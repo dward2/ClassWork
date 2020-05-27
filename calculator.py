@@ -24,9 +24,11 @@ def multiply(a, b):
     print("{} * {} = {}".format(a, b, answer))
     
 def divide(a, b):
+    print("Name of calculator is {}".format(__name__))
     print("Divide")
     answer = a / b
     print("{} * {} = {}".format(a, b, answer))
+    return answer
 
 def math_command(a, b):
     c = input("Enter a command: ")
@@ -41,9 +43,9 @@ def math_command(a, b):
     else:
         print("{} is not a valid command".format(c))
         
+if __name__ == "__main__":
+    x, y = calc_input()
+    math_command(x, y)
 
-x, y = calc_input()
-math_command(x, y)
-
-print("Finished")
+    print("Finished")
 
