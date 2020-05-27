@@ -12,7 +12,7 @@ def calc_input():
 
 def add(a, b):
     print("Add")
-    answer = a + b + 1
+    answer = a + b
     print("{} + {} = {}".format(a, b, answer))
     return answer
 
