@@ -1,5 +1,5 @@
 def test_add():
     from calculator import add
-    answer = add(1, 2)
-    expected = 3
+    answer = add(2, 3)
+    expected = 5
     assert answer == expected
